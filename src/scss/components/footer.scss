@@ -1,0 +1,189 @@
+@import "colors";
+
+.footer {
+	position: relative;
+	font-size:14px;
+	background: black;
+	color:white;
+
+	.content {
+		margin: 0px auto;
+		padding:40px 50px;
+	}
+
+	a {
+		color:white;
+		text-decoration: none;
+
+		&:after {
+			display:none;
+		}
+
+		&:hover {
+
+		}
+	}
+
+	i {
+		font-size:1.2em;
+		margin-right:8px;
+		transition:all .3s;
+
+		&:hover {
+			
+		}
+	}
+
+	.footer-tile {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		padding:20px;
+		margin:0;
+	}
+
+	.logo-tile {
+
+		.footer-logo-container {
+			position:relative;
+		}
+
+		a {
+
+		}
+
+		img {
+			width:100%;
+			max-width:300px;
+			height:auto;
+		}
+	}
+
+	.footer-nav-tile {
+		
+		a {
+
+		}
+	}
+
+	.social-tile {
+		flex-direction:row;
+
+		a {
+
+		}
+
+		.social-line {
+
+		}
+	}
+
+	.contact-tile {
+
+		a {
+
+		}
+
+		.contact-line {
+			margin-bottom:10px;
+
+			&:nth-last-of-type(1) {
+				margin-bottom:0;
+			}
+		}
+	}
+
+	.subscribe-tile {
+
+		.mailchimp-wrapper {
+			// max-width:410px;
+			margin:0 auto;
+			flex-wrap:wrap;
+	
+			.mc-form-form {
+				width:100%;
+				display: flex;
+				flex-wrap:wrap;
+			}
+	
+			.mc-field-group {
+				position: relative;
+				width:100%;
+			}
+				 
+			.required {
+				width:100%;
+			}
+		}
+	
+		#mc_embed_signup {
+				
+			div.mce_inline_error {
+				position: absolute;
+				top:100%;
+				left:0;
+				width:100%;
+				height:auto;
+				margin:0;
+				padding: 10px;
+				background-color:rgba(0,0,0,0);
+				color:red;
+				font-weight:400;
+			}
+		}
+	
+		.response {
+			position: absolute;
+			top:calc(100% + 10px);
+			left:0;
+			width:100%;
+			height:auto;
+		}
+
+		.seemax-button {
+			cursor: pointer;
+			width:auto;
+			margin-top:10px;
+			border:0px solid white;
+			color:white;
+
+			&:hover {
+
+			}
+		}
+	}
+
+	.copyright {
+		background:gray;
+		width:100%;
+		text-align:center;
+		padding:8px 25px;
+		font-size: 0.8em;
+		color:white;
+	}
+}
+
+// 1024px And Below
+@media screen and (max-width: 1024px){
+
+	.footer {
+
+	}
+}
+
+
+// 767px And Below
+@media screen and (max-width: 767px){
+
+	.footer {
+
+		.content {
+			margin: 0px auto;
+			padding:30px 25px 40px 25px;
+		}
+		
+		.footer-tile {
+			padding:20px 0px;
+		}
+	}
+}
