@@ -9,7 +9,7 @@ export let animateSection = () => {
   let myScrollOffset = 0;
   // Global var for animations / Access via section trig loop 
 
-  console.log(myScrollHeight);
+  // console.log(myScrollHeight);
   let sectionAnim = {
 
     sectionAnim1 : () => {

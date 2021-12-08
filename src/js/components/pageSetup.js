@@ -20,13 +20,13 @@ export let preLoader = () => {
 
 export let vidLinks= () => {
 	let thisSrc = $('.iframeHolder').attr('data-desktop-vid');
-  console.log(thisSrc);
+  // console.log(thisSrc);
   $('.iframeEmpty').attr('src', 'https://player.vimeo.com/video/'+thisSrc+'?h=25f334e956&title=0&byline=0&portrait=0') 
 }
 
 export let mobileVidLinks= () => {
 	let thisSrc = $('.iframeHolder').attr('data-mobile-vid');
-  console.log(thisSrc);
+  // console.log(thisSrc);
   $('.iframeEmpty').attr('src', 'https://player.vimeo.com/video/'+thisSrc+'?h=25f334e956&title=0&byline=0&portrait=0') 
 }
 

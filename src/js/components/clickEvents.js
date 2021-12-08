@@ -21,7 +21,7 @@ export let clickEvents = () => {
   $('a[href^="#"]').on('click', function(e) {
     
     e.preventDefault();
-    console.log('hash it out');
+    // console.log('hash it out');
     
     // IF IT"S MOBILE / IPAD OR SMALLER
     if (screen.width <= 1025){
