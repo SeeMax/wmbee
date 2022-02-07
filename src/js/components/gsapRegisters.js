@@ -1,3 +1,3 @@
 export let gsapRegisters = () => {
-  gsap.registerPlugin(ScrollTrigger, SplitText, DrawSVGPlugin, MorphSVGPlugin);
+  gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, SplitText, DrawSVGPlugin, MorphSVGPlugin);
 }

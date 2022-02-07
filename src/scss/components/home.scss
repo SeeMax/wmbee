@@ -625,6 +625,20 @@ section {
 // 	}
 // }
 
+
+.scroll-clicker {
+	cursor:pointer;
+	position: fixed;
+	left:0;
+	right:0;
+	bottom:12vh;
+	height:14vh;
+	width:16%;
+	margin:0 auto;
+	border:1px solid red;
+	z-index:3000;
+}
+
  // 1024px And Below
  @media screen and (max-width: 1300px){
 
@@ -639,6 +653,11 @@ section {
 			.video-area {
 				max-width: 600px;
 			}
+		}
+
+		.scroll-clicker {
+			bottom:2vh;
+			height:14vh;
 		}
 	}
 }
@@ -816,6 +835,10 @@ section {
 				}
 			}
 		}
+	}
+
+	.scroll-clicker {
+		display:none;
 	}
 }
 
