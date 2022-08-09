@@ -120,7 +120,7 @@
                     ]
                 },
                 {
-                    "key": "field_61a80f70f9a22",
+                    "key": "field_61a80f3c796c6",
                     "label": "Footer Text",
                     "name": "footer_text",
                     "type": "wysiwyg",
@@ -174,5 +174,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1638404294
+    "modified": 1638404308
 }

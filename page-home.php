@@ -107,9 +107,9 @@
 				$dEmbed = get_sub_field('embed');
 			?>
 				
-				<section id="section3" class="video-section">
+				<!-- <section id="section3" class="video-section">
 					<div class="section-lines sectionLines">
-						<?php get_template_part( 'partials/_backlines' ); ?>
+						<!-- ?php get_template_part( 'partials/_backlines' ); ?>
 					</div>
 					<div class="down-arrow-svg">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1441 790.43">
@@ -137,12 +137,12 @@
 					</div>
 					<div class="content sectionContent">  
 						<div class="video-area videoArea">
-							<div class="iframe-holder iframeHolder" data-mobile-vid ="<?php echo $mEmbed;?>" data-desktop-vid="<?php echo $dEmbed;?>">  
+							<div class="iframe-holder iframeHolder" data-mobile-vid ="<!-- ?php echo $mEmbed;?>" data-desktop-vid="<!--?php echo $dEmbed;?>">  
 								<iframe class="iframeEmpty" src="" width="640" height="1138" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>  		
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> -->
 			<?php endwhile;endif;?>
 
 			<?php if( have_rows('devastation') ): ?><?php while( have_rows('devastation') ): the_row(); 
@@ -325,7 +325,8 @@
 				</section>
 			<?php endwhile;endif;?>
 
-			<?php if( have_rows('partner') ): ?><?php while( have_rows('partner') ): the_row(); 
+			<!-- ?php if( have_rows('partner') ): ?>
+			<!-- ?php while( have_rows('partner') ): the_row();  
 				$title = get_sub_field('title');
 				$image = get_sub_field('image');
 				$insetImage = get_sub_field('inset_image');
@@ -333,7 +334,7 @@
 			?>
 				<section id="section7" class="partner-section">
 					<div class="section-lines sectionLines">
-						<?php get_template_part( 'partials/_backlines' ); ?>
+						<!-- ?php get_template_part( 'partials/_backlines' ); ?>
 					</div>
 					<div class="down-arrow-svg">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1441 790.43">
@@ -361,14 +362,14 @@
 								<path d="M801.42,757.39h1.12l3.58,10.13h.09l3.59-10.13h1.12L807,768.59h-1.6Z" transform="translate(0.85 0.5)"/>
 								<path d="M813.69,758.4v4h5v.93h-5v4.25h5.63v1h-6.74v-11.2h6.74v1Z" transform="translate(0.85 0.5)"/>
 							</g> -->
-						</svg>
+						<!-- </svg>
 					</div>
 					<div class="content sectionContent">   
-						<h2><?php echo $title;?></h2>  
+						<h2><!-- ?php echo $title;?></h2>  
 						<div class="partner-content-inner-container">
 							<div class="text-container">
-								<img class="text-image textImage" src="<?php echo get_template_directory_uri(); ?>/dist/images/karma-logo-hroizontal-color.png" alt="Logo">
-								<?php echo $body;?>
+								<img class="text-image textImage" src="<!-- ?php echo get_template_directory_uri(); ?>/dist/images/karma-logo-hroizontal-color.png" alt="Logo">
+								<!-- ?php echo $body;?>
 							</div>
 							<div class="image-container imageContainer">	
 								<svg id="clipped-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
@@ -381,7 +382,7 @@
 									<image 
 										width="100%" 
 										height="100%" 
-										xlink:href="<?php echo $insetImage['url'];?>" 
+										xlink:href="<!-- ?php echo $insetImage['url'];?>" 
 										clip-path="url(#partnerClip)"
 									/>
 								</svg>
@@ -389,17 +390,16 @@
 							
 						</div>
 					</div>
-					<?php if( have_rows('social') ): ?><?php while( have_rows('social') ): the_row(); 
+					<!-- ?php if( have_rows('social') ): ?>
+					<!-- ?php while( have_rows('social') ): the_row(); 
 						$footer = get_sub_field('footer_text');
 					?>	
 						<div class="footer-area footerArea">
-							<?php echo $footer;?>
+							<!-- ?php echo $footer;?>
 						</div>
-					<?php endwhile;endif;?>
+					<!-- ?php endwhile;endif;?>
 				</section>
-				<!-- <div class="scroll-clicker scrollClicker">
-				</div> -->
-			<?php endwhile;endif;?>
+			<!-- ?php endwhile;endif;?> -->
 		</main>
 	<?php endwhile; ?>
 <?php get_footer(); ?>
