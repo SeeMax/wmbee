@@ -56,52 +56,52 @@ export let mobileAnimateSection = () => {
       return tl;
     },
 
+    // sectionAnim3: () => {
+    //   let thisSec = $("#section3");
+    //   let thisBack = $("#background3");
+    //   let sectionLines = thisSec.find(".single-backline");
+    //   let center4L = $(thisSec).find("#center-4L");
+    //   let center4R = $(thisSec).find("#center-4R");
+    //   let center3L = $(thisSec).find("#center-3L");
+    //   let center3R = $(thisSec).find("#center-3R");
+    //   let center2L = $(thisSec).find("#center-2L");
+    //   let center2R = $(thisSec).find("#center-2R");
+    //   let bottomSmall = $(thisSec).find("#bottom-small");
+
+    //   let tl = gsap.timeline({
+    //     paused: true,
+    //     defaults: {
+    //       duration: 0.5,
+    //       ease: "none",
+    //     },
+    //     onComplete: function () {
+    //       // gsap.set('#background1', {opacity:0});
+    //     },
+
+    //     // onReverseComplete:function() {
+    //     //   // setTimeout(() => {
+    //     //     // gsap.set('body', {touchAction:'auto'});
+    //     //     // gsap.set('body', {overflow:'auto'});,
+    //     //   // }, 1000);
+    //     //   gsap.set('#background1', {opacity:1});
+    //     // },
+    //   });
+    //   tl.fromTo(".videoArea", { opacity: 0 }, { opacity: 1 }, "scrollInAll");
+    //   tl.fromTo(center4L, { opacity: 0 }, { opacity: 1 }, "scrollInAll");
+    //   tl.fromTo(center4R, { opacity: 0 }, { opacity: 1 }, "scrollInAll");
+    //   tl.fromTo(center3L, { opacity: 0 }, { opacity: 1 }, "scrollInAll");
+    //   tl.fromTo(center3R, { opacity: 0 }, { opacity: 1 }, "scrollInAll");
+    //   tl.fromTo(center2L, { opacity: 0 }, { opacity: 1 }, "scrollInAll");
+    //   tl.fromTo(center2R, { opacity: 0 }, { opacity: 1 }, "scrollInAll");
+    //   tl.fromTo(bottomSmall, { opacity: 0 }, { opacity: 1 }, "scrollInAll");
+    //   tl.fromTo(thisBack, { opacity: 0 }, { opacity: 1 }, "scrollInAll");
+    //   tl.fromTo(sectionLines, { opacity: 0 }, { opacity: 1 }, "scrollInAll");
+    //   tl.fromTo(sectionLines, { opacity: 0 }, { opacity: 1 }, "scrollInAll");
+
+    //   return tl;
+    // },
+
     sectionAnim3: () => {
-      let thisSec = $("#section3");
-      let thisBack = $("#background3");
-      let sectionLines = thisSec.find(".single-backline");
-      let center4L = $(thisSec).find("#center-4L");
-      let center4R = $(thisSec).find("#center-4R");
-      let center3L = $(thisSec).find("#center-3L");
-      let center3R = $(thisSec).find("#center-3R");
-      let center2L = $(thisSec).find("#center-2L");
-      let center2R = $(thisSec).find("#center-2R");
-      let bottomSmall = $(thisSec).find("#bottom-small");
-
-      let tl = gsap.timeline({
-        paused: true,
-        defaults: {
-          duration: 0.5,
-          ease: "none",
-        },
-        onComplete: function () {
-          // gsap.set('#background1', {opacity:0});
-        },
-
-        // onReverseComplete:function() {
-        //   // setTimeout(() => {
-        //     // gsap.set('body', {touchAction:'auto'});
-        //     // gsap.set('body', {overflow:'auto'});,
-        //   // }, 1000);
-        //   gsap.set('#background1', {opacity:1});
-        // },
-      });
-      tl.fromTo(".videoArea", { opacity: 0 }, { opacity: 1 }, "scrollInAll");
-      tl.fromTo(center4L, { opacity: 0 }, { opacity: 1 }, "scrollInAll");
-      tl.fromTo(center4R, { opacity: 0 }, { opacity: 1 }, "scrollInAll");
-      tl.fromTo(center3L, { opacity: 0 }, { opacity: 1 }, "scrollInAll");
-      tl.fromTo(center3R, { opacity: 0 }, { opacity: 1 }, "scrollInAll");
-      tl.fromTo(center2L, { opacity: 0 }, { opacity: 1 }, "scrollInAll");
-      tl.fromTo(center2R, { opacity: 0 }, { opacity: 1 }, "scrollInAll");
-      tl.fromTo(bottomSmall, { opacity: 0 }, { opacity: 1 }, "scrollInAll");
-      tl.fromTo(thisBack, { opacity: 0 }, { opacity: 1 }, "scrollInAll");
-      tl.fromTo(sectionLines, { opacity: 0 }, { opacity: 1 }, "scrollInAll");
-      tl.fromTo(sectionLines, { opacity: 0 }, { opacity: 1 }, "scrollInAll");
-
-      return tl;
-    },
-
-    sectionAnim4: () => {
       let thisSec = $("#section4");
       let thisBack = $("#background4");
       // let sectionLines = thisSec.find('.single-backline')
@@ -127,7 +127,7 @@ export let mobileAnimateSection = () => {
       return tl;
     },
 
-    sectionAnim5: () => {
+    sectionAnim4: () => {
       let thisSec = $("#section5");
       let thisBack = $("#background5");
       let thisOverlay = $("#overlay5");
@@ -152,7 +152,7 @@ export let mobileAnimateSection = () => {
       return tl;
     },
 
-    sectionAnim6: () => {
+    sectionAnim5: () => {
       let thisSec = $("#section6");
       let thisBack = $("#background6");
       let thisOverlay = $("#overlay6");
@@ -177,37 +177,41 @@ export let mobileAnimateSection = () => {
       return tl;
     },
 
-    sectionAnim7: () => {
-      let thisSec = $("#section7");
-      let thisBack = $("#background7");
-      let thisOverlay = $("#overlay7");
-      let sectionLines = thisSec.find(".single-backline");
-      let secArrow = $("#section1").find(".down-arrow-svg");
-      let tl = gsap.timeline({
-        paused: true,
-        defaults: {
-          duration: 0.5,
-          ease: "none",
-        },
-      });
+    //   sectionAnim6: () => {
+    //     let thisSec = $("#section7");
+    //     let thisBack = $("#background7");
+    //     let thisOverlay = $("#overlay7");
+    //     let sectionLines = thisSec.find(".single-backline");
+    //     let secArrow = $("#section1").find(".down-arrow-svg");
+    //     let tl = gsap.timeline({
+    //       paused: true,
+    //       defaults: {
+    //         duration: 0.5,
+    //         ease: "none",
+    //       },
+    //     });
 
-      tl.fromTo(thisOverlay, { opacity: 0 }, { opacity: 0.9 }, "scrollInAll");
-      tl.fromTo(thisBack, { opacity: 0 }, { opacity: 1 }, "scrollInAll");
-      tl.fromTo(sectionLines, { opacity: 0 }, { opacity: 0.5 }, "scrollInAll");
-      tl.fromTo(secArrow, { opacity: 1 }, { opacity: 0 }, "scrollInAll");
+    //     tl.fromTo(thisOverlay, { opacity: 0 }, { opacity: 0.9 }, "scrollInAll");
+    //     tl.fromTo(thisBack, { opacity: 0 }, { opacity: 1 }, "scrollInAll");
+    //     tl.fromTo(sectionLines, { opacity: 0 }, { opacity: 0.5 }, "scrollInAll");
+    //     tl.fromTo(secArrow, { opacity: 1 }, { opacity: 0 }, "scrollInAll");
 
-      return tl;
-    },
+    //     return tl;
+    //   },
   };
 
   sectionAnim["sectionAnim1"]().play();
 
   // Fire An Animation From Above for Each Section
   let sectionTrig = (myCount) => {
-    // Play Section 1 automatically
+    if (myCount <= 2) {
+      var startHeight = myCount;
+    } else {
+      var startHeight = myCount + 1;
+    }
 
     ScrollTrigger.create({
-      trigger: "#section" + myCount,
+      trigger: "#section" + startHeight,
       start: "top bottom",
       end: "bottom bottom",
       // scrub:1,
@@ -220,13 +224,13 @@ export let mobileAnimateSection = () => {
         }
       },
       onLeave: function () {
-        if (myCount < 7) {
+        if (myCount < 5) {
           // gsap.set('body', {touchAction:'none'});
           sectionAnim["sectionAnim" + myCount]().reverse(0);
         }
       },
       onEnterBack: function () {
-        if (myCount < 7) {
+        if (myCount < 5) {
           // gsap.set('body', {touchAction:'none'});
           sectionAnim["sectionAnim" + myCount]().play();
         }

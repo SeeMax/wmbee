@@ -862,23 +862,23 @@ export let animateSection = () => {
         },
       });
 
-      let arrowTL = gsap.timeline({
-        defaults: {
-          duration: 0.15,
-          ease: "none",
-        },
-        onComplete: function () {
-          // Bounce The Down Arrow
-          gsap
-            .timeline({ repeat: -1, yoyo: true })
-            .to(downArrow, { y: -4, duration: 1, ease: "none" });
-        },
-        onReverseComplete: function () {
-          // Stop Bouncin The Down Arrow and Reset it's Y position
-          gsap.killTweensOf(downArrow);
-          gsap.set(downArrow, { y: 0 });
-        },
-      });
+      // let arrowTL = gsap.timeline({
+      //   defaults: {
+      //     duration: 0.15,
+      //     ease: "none",
+      //   },
+      //   onComplete: function () {
+      //     // Bounce The Down Arrow
+      //     gsap
+      //       .timeline({ repeat: -1, yoyo: true })
+      //       .to(downArrow, { y: -4, duration: 1, ease: "none" });
+      //   },
+      //   onReverseComplete: function () {
+      //     // Stop Bouncin The Down Arrow and Reset it's Y position
+      //     gsap.killTweensOf(downArrow);
+      //     gsap.set(downArrow, { y: 0 });
+      //   },
+      // });
 
       // Set background z-index by section number / Section 2 has no back / Section 3 is z-index 110 to stay above all
       tl.set(thisBack, { zIndex: 106 });
@@ -939,37 +939,37 @@ export let animateSection = () => {
       );
 
       // Animate Arrow
-      arrowTL.fromTo(
-        bottomSmall,
-        { drawSVG: "50% 50%" },
-        { drawSVG: "0% 100%", duration: 0.4 },
-        "scrollIn"
-      );
-      arrowTL.fromTo(
-        sectionText,
-        { y: -6, opacity: 0 },
-        { y: 0, opacity: 1 },
-        "scrollIn+=0.15"
-      );
-      arrowTL.fromTo(
-        downArrowLine,
-        { drawSVG: "100% 100%" },
-        { drawSVG: "100% 0%" },
-        "scrollIn+=0.175"
-      );
-      arrowTL.fromTo(
-        downArrowPoint,
-        { drawSVG: "50% 50%" },
-        { drawSVG: "100% 0%" },
-        "scrollIn+=0.325"
-      );
+      // arrowTL.fromTo(
+      //   bottomSmall,
+      //   { drawSVG: "50% 50%" },
+      //   { drawSVG: "0% 100%", duration: 0.4 },
+      //   "scrollIn"
+      // );
+      // arrowTL.fromTo(
+      //   sectionText,
+      //   { y: -6, opacity: 0 },
+      //   { y: 0, opacity: 1 },
+      //   "scrollIn+=0.15"
+      // );
+      // arrowTL.fromTo(
+      //   downArrowLine,
+      //   { drawSVG: "100% 100%" },
+      //   { drawSVG: "100% 0%" },
+      //   "scrollIn+=0.175"
+      // );
+      // arrowTL.fromTo(
+      //   downArrowPoint,
+      //   { drawSVG: "50% 50%" },
+      //   { drawSVG: "100% 0%" },
+      //   "scrollIn+=0.325"
+      // );
 
       // Build Master TLTL
       tl.fromTo(thisOverlay, { opacity: 0 }, { opacity: 0.1 }, "scrollInAll");
       tl.fromTo(thisBack, { opacity: 0 }, { opacity: 1 }, "scrollInAll");
       tl.add(lineTL, "scrollInAll");
       tl.add(contentTL, "scrollInAll+=0.6");
-      tl.add(arrowTL, "scrollInAll+=0.8");
+      // tl.add(arrowTL, "scrollInAll+=0.8");
 
       return tl;
     },
@@ -1263,28 +1263,28 @@ export let animateSection = () => {
         if (myCount > 1) {
           gsap.set(document.body, { overflow: "hidden" });
           sectionAnim["sectionAnim" + myCount]().play();
-          // alert(myCount+' section entered');
+          // alert(myCount + " section entered");
         }
       },
       onLeave: function () {
-        if (myCount < 6) {
+        if (myCount < 5) {
           gsap.set(document.body, { overflow: "hidden" });
           sectionAnim["sectionAnim" + myCount]().reverse(0);
-          // alert(myCount+' section left');
+          // alert(myCount + " section left");
         }
       },
       onEnterBack: function () {
-        if (myCount < 6) {
+        if (myCount < 5) {
           gsap.set(document.body, { overflow: "hidden" });
           sectionAnim["sectionAnim" + myCount]().play();
-          // alert(myCount+' section back again');
+          // alert(myCount + " section back again");
         }
       },
       onLeaveBack: function () {
         if (myCount > 1) {
           gsap.set(document.body, { overflow: "hidden" });
           sectionAnim["sectionAnim" + myCount]().reverse(0);
-          // alert(myCount+' section left again');
+          // alert(myCount + " section left again");
         }
       },
     });

@@ -182,7 +182,7 @@
 							<div class="buzz-on-bees-overlay c-block-fill"></div>
 							<div class="buzz-on-bees-content">
 								<img src="<?php echo get_template_directory_uri(); ?>/dist/images/karma-logo-bee.png" alt="Logo">
-								<h4>The Buzz On Bees</h4>
+								<h4>The Buzz on Bees</h4>
 								<p><?php echo $buzz;?></p>
 							</div>
 						</div>
@@ -228,7 +228,7 @@
 							<div class="buzz-on-bees-overlay c-block-fill"></div>
 							<div class="buzz-on-bees-content">
 								<img src="<?php echo get_template_directory_uri(); ?>/dist/images/karma-logo-bee.png" alt="Logo">
-								<h4>The Buzz On Bees</h4>
+								<h4>The Buzz on Bees</h4>
 								<p><?php echo $buzz;?></p>
 							</div>
 						</div>
@@ -331,7 +331,7 @@
 							<div class="buzz-on-bees-overlay c-block-fill"></div>
 							<div class="buzz-on-bees-content">
 								<img src="<?php echo get_template_directory_uri(); ?>/dist/images/karma-logo-bee.png" alt="Logo">
-								<h4>The Buzz On Bees</h4>
+								<h4>The Buzz on Bees</h4>
 								<p><?php echo $buzz;?></p>
 							</div>
 						</div>
