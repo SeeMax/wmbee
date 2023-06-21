@@ -186,7 +186,6 @@ remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
 add_filter('body_class', 'add_slug_to_body_class'); // Add slug to body class (Starkers build)
 add_filter('wp_nav_menu_args', 'my_wp_nav_menu_args'); // Remove surrounding <div> from WP Navigation
 add_filter('the_category', 'remove_category_rel_from_category_list'); // Remove invalid rel attribute
-add_filter('show_admin_bar', 'remove_admin_bar'); // Remove Admin bar
 add_filter('style_loader_tag', 'html5_style_remove'); // Remove 'text/css' from enqueued stylesheet
 add_filter('post_thumbnail_html', 'remove_thumbnail_dimensions', 10); // Remove width and height dynamic attributes to thumbnails
 add_filter('image_send_to_editor', 'remove_thumbnail_dimensions', 10); // Remove width and height dynamic attributes to post images
@@ -322,24 +321,6 @@ function seemax_custom_excerpt_more($more) {
   global $post;
   return '<a href="'. get_permalink($post->ID) . '">'. __(' ...Read More') .'</a>';
 } add_filter('excerpt_more', 'seemax_custom_excerpt_more');
-
-// CHILD CPT MENU PARENT HIGHLIGHT //
-function add_current_nav_class($classes, $item) {
-	// Getting the current post details
-	global $post;
-	// Getting the post type of the current post
-	$current_post_type = get_post_type_object(get_post_type($post->ID));
-	$current_post_type_slug = $current_post_type->rewrite[slug];
-	// Getting the URL of the menu item
-	$menu_slug = strtolower(trim($item->url));
-	// If the menu item URL contains the current post types slug add the current-menu-item class
-	if (strpos($menu_slug,$current_post_type_slug) !== false) {
-	   $classes[] = 'current-menu-item';
-	}
-	// Return the corrected set of classes to be added to the menu item
-	return $classes;
-} add_action('nav_menu_css_class', 'add_current_nav_class', 10, 2 );
-
 
 // Pagination for paged posts, Page 1, Page 2, Page 3, with Next and Previous Links, No plugin
 function html5wp_pagination() {
